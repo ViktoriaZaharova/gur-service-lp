@@ -1,0 +1,1009 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+//*::-webkit-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*::-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-ms-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//  color: #666
+//
+//body input:required:valid,
+//body textarea:required:valid
+//  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #000
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  font-size: 10px
+  color: #808080
+  border: none
+    radius: 0
+  width: 100%
+  background: transparent
+  &::placeholder
+    color: #808080
+  &:hover, &:focus
+    outline: none
+
+label
+  display: block
+  width: 100%
+
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  outline: none
+  padding: 0
+  font-family: $default-font
+  font-size: 13px
+  font-weight: bold
+  text-transform: uppercase
+  box-shadow: none
+  cursor: pointer
+  transition: .3s ease
+  height: 54px
+  border-radius: 0
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn-accent
+  color: #fff
+  background: $accent
+  &:hover
+    background: #b41b11
+    color: #fff
+
+.btn-grey
+  background: #e5e5e5
+  height: 41px
+  color: #808080
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-sing
+  margin: 46px auto -126px
+  height: 92px
+  font-size: 17px
+  max-width: 485px
+  width: 100%
+  
+.btn-white
+  background: #feffff
+  color: $accent
+  height: 56px
+  &:hover
+    background: $grey
+    color: #000
+
+button
+  outline: none
+  box-shadow: none
+  padding: 0
+  border: none
+    radius: 0
+  margin: 0
+  font-family: $default-font
+  transition: .3s ease
+  cursor: pointer
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+h1
+  font-size: 230px
+  color: #e6e6e6
+  font-weight: bold
+  width: 100%
+  text-transform: uppercase
+  line-height: 1
+  span
+    display: block
+    font-size: 99px
+    color: #000
+    max-width: 500px
+    width: 100%
+    line-height: .8
+
+h2
+  position: relative
+  font-size: 50px
+  text-align: center
+  margin: 0 auto
+  font-weight: bold
+  z-index: 1
+  text-transform: uppercase
+  width: fit-content
+  span
+    display: block
+    position: relative
+    z-index: 1
+    width: fit-content
+    margin: 0 auto
+    &:before
+      content: ''
+      position: absolute
+      z-index: -1
+      height: 35px
+      background: #e5e5e5
+      bottom: 0
+      left: 50%
+      transform: translate(-50%, 0)
+      width: calc(100% + 20px)
+
+.container
+  max-width: 1200px
+
+.p-80
+  padding: 80px 0
+
+.mt-40
+  margin-top: 40px
+
+.bg-grey
+  background: $grey
+  h2
+    span
+      &:before
+        background: #feffff
+
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 109px
+  width: 100%
+
+.phone
+  border: 1px solid $accent
+  color: $accent
+  font-size: 13px
+  font-weight: bold
+  padding: 6px 18px
+  margin: 0 0 0 9px
+  &:hover
+    color: #fff
+    background: $accent
+
+.list-phones
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 13px
+  height: fit-content
+  p
+    margin: 0 14px 0 0
+
+.address
+  display: flex
+  align-items: center
+  font-size: 13px
+  margin: 7px 55px 0 auto
+  strong
+    margin: 0 0 0 10px
+
+strong
+  font-weight: bold
+  display: inline-block
+
+.color-accent
+  color: $accent
+
+.btn-burger
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: space-between
+  background: $accent
+  padding: 19px 13px 12px
+  width: 51px
+  height: 51px
+  margin: -20px 0 0 36px
+  cursor: pointer
+  span
+    height: 3px
+    width: 100%
+    background: #fff
+    display: block
+
+.title-wrap
+  position: relative
+
+.links-all
+  position: absolute
+  bottom: 0
+  right: 0
+  color: #808080
+  font-size: 15px
+  &:hover
+    color: $accent
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  width: 100%
+  position: relative
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 20px 0 0
+  li
+    cursor: pointer
+    transition: .3s ease
+    width: 46px
+    height: 4px
+    background: #5b5b5b
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: $accent
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  width: 42px
+  height: 42px
+  border: 1px solid $grey
+    radius: 50%
+  background: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 1
+  opacity: 1
+  &:before
+    content: ''
+    width: 0
+    height: 0
+    border-right: 12px solid $accent
+    border-top: 12px solid transparent
+    border-bottom: 12px solid transparent
+    display: inline-block
+    margin: 0 3px 0 0
+
+.slick-prev
+  left: 13px
+
+.slick-next
+  right: 13px
+  &:before
+    border-right: none
+    border-left: 12px solid $accent
+    margin: 0 0 0 3px
+
+//header
+header
+  padding: 10px 0 0
+  border-top: 9px solid $accent
+
+
+//main
+main
+  position: relative
+  padding: 41px 0 72px
+
+.main-content
+  padding: 0 68px
+
+.main-img
+  position: absolute
+  top: 55px
+  right: -170px
+  img
+    position: relative
+    z-index: 1
+
+.main-img-circle
+  position: absolute
+  width: 394px
+  height: 394px
+  border: solid 1px #dd2115
+    radius: 50%
+  bottom: -10px
+  left: 90px
+  span
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border: solid 1px #dd2115
+      radius: 50%
+    width: calc(100% - 52px)
+    height: calc(100% - 52px)
+  &:before, &:after
+    content: ''
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border: solid 1px #dd2115
+      radius: 50%
+    position: absolute
+  &:before
+    width: calc(100% - 102px)
+    height: calc(100% - 102px)
+  &:after
+    width: calc(100% - 152px)
+    height: calc(100% - 152px)
+
+//calculate-section
+.calculate-section
+  position: relative
+  z-index: 1
+
+.calculate-section-wrapper
+  width: 100%
+  position: relative
+  background: #fff
+  box-shadow: 0 12px 51px 0 rgba(0, 0, 0, 0.13)
+  border-top: 9px solid $accent
+  padding: 30px 40px 42px
+  .box-text
+    font-size: 15px
+
+.form-calculate
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+  label, button
+    max-width: 19.7%
+    width: 100%
+    height: 54px
+    margin: 20px 0 0
+  label
+    background: #e5e5e5
+    padding: 10px 15px
+
+
+.input-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 5px
+  width: 16px
+  height: 11px
+
+//about
+.about
+  padding: 90px 0
+  h2
+    font-size: 99px
+    line-height: .9
+    margin: 0 auto 20px
+  .box-text
+    line-height: 1.13
+    font-size: 15px
+
+.subtitle
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: bold
+
+.about-title
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+
+//advantages
+.advantages
+  padding: 77px 0 98px
+  h2
+    margin: 0 auto 50px
+
+.advantages-content
+  position: relative
+  font-size: 15px
+  padding: 0 0 10px 40px
+  margin: 0 0 35px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 0
+    width: 4px
+  &:before
+    height: 108px
+    top: 0
+    background: $accent
+  &:after
+    bottom: 0
+    background: #5b5b5b
+    height: 62px
+  h3
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    margin: 10px 0 20px
+
+.advantages-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 100px 0
+
+.advantages-box
+  margin: 0 0 60px
+  max-width: 210px
+  width: 100%
+  font-size: 15px
+  border-bottom: 4px solid $accent
+  padding: 0 0 7px
+  display: flex
+  align-items: flex-end
+
+.advantages-box__icon
+  height: 61px
+  width: 65px
+  min-width: 65px
+  margin: 0 10px 0 0
+  img
+    max-height: 100%
+
+.advantages-content__icon
+  width: 53px
+  display: flex
+  align-items: center
+  justify-content: center
+
+//price
+.price
+  padding: 120px 0 0
+  margin: 0 0  -40px
+
+.price-wrapper
+  margin: 40px auto 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.price-content-info
+  position: relative
+  z-index: 1
+  color: #fff
+  padding: 40px 30px 38px
+  max-width: 530px
+  width: 100%
+  .box-text
+    font-size: 19px
+    font-weight: bold
+    max-width: 210px
+    width: 100%
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 2000px
+    background: $accent
+    z-index: -1
+  .btn
+    margin: 29px 0 0
+
+.price-content-info__img
+  position: absolute
+  max-width: 421px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  top: 50%
+  right: 0
+  transform: translate(0,-50%)
+
+.price-content
+  width: calc(100% - 530px)
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0 30px 0 0
+
+.price-box
+  margin: 0 0 35px
+  max-width: 255px
+  width: 100%
+  border-bottom: 4px solid #e5e5e5
+  font-size: 15px
+  padding: 0 0 10px
+
+.price-box__sum
+  font-size: 31px
+  font-weight: bold
+
+//.reviews
+.reviews
+  padding: 60px 0
+
+.reviews-slider
+  margin: 40px auto 0
+  padding: 0 90px
+
+.reviews-box
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  border: solid 2px #cfcfcf
+  max-width: 302px
+  width: 100%
+
+
+//service-included
+.service-included
+  padding: 60px 0 80px
+  h3
+    text-align: center
+    width: 100%
+    text-transform: uppercase
+    color: #e6e6e6
+    font-size: 98px
+    font-weight: bold
+    line-height: 1
+
+.service-included-box
+  margin: 30px 0 0
+
+.service-included-img
+  position: relative
+  z-index: 1
+  margin: -40px auto 0
+
+.list-check
+  font-size: 15px
+  position: relative
+  &:before
+    content: ''
+    width: 1px
+    height: 355px
+    background: #808080
+    position: absolute
+    left: 12px
+    bottom: 30px
+  li
+    margin: 0 0 20px
+    position: relative
+    padding: 0 0 0 30px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 6px
+      top: 5px
+      background: $accent url("../img/checkbox.svg") no-repeat center
+        size: 10px
+      width: 14px
+      height: 14px
+      border-radius: 50%
+
+.service-included-box2
+  .list-check
+    &:before
+      bottom: 40px
+
+//not-included
+.not-included
+  padding: 80px 0 20px
+  h2
+    text-align: center
+    color: #fff
+    font-size: 98px
+    margin: 0 0 30px
+
+.list-close
+  font-size: 15px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  li
+    margin: 0 0 20px
+    display: flex
+    align-items: center
+    &:before
+      content: ''
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 10px 0 0
+      width: 14px
+      min-width: 14px
+      height: 14px
+      border-radius: 50%
+      background: $footer-bg url("../img/cancel.svg") no-repeat center
+        size: 8px
+
+//.gallery
+.gallery
+  padding: 80px 0 50px
+  h2
+    margin: 0 auto 33px
+
+.gallery-item
+  width: 100%
+  height: 277px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.gallery-item-max
+  height: 373px
+
+.gallery-item-max-min
+  height: 179px
+
+//.regions
+.regions
+  padding: 80px 0
+  h2
+    margin: 0 auto 40px
+
+
+
+.regions-box
+  margin: 0 0 20px
+  width: 100%
+  font-size: 20px
+  &__body
+    border-top: 4px solid $accent
+    padding: 18px 0 0
+    margin: 12px 0 0
+  &__icon
+    width: 70px
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-height: 100%
+
+.regions-box2
+  .regions-box__icon
+    width: 58px
+
+.regions-box3
+  .regions-box__icon
+    width: 60px
+
+.regions-box4
+  .regions-box__icon
+    width: 103px
+
+//articles
+.articles
+  padding: 134px 0 70px
+
+.article-box
+  height: 100%
+  width: 100%
+  border: solid 2px #e5e5e5
+  background-color: #fff
+  .btn
+    padding: 0 43px
+    width: fit-content
+    margin: 21px 0 0 auto
+
+.article-img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  height: 191px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.article-box__body
+  width: 100%
+  padding: 16px 27px 24px
+
+.article-box__name
+  font-size: 20px
+  color: #000
+  max-width: 250px
+  width: 100%
+  &:hover
+    color: $accent
+
+
+//.warranty
+.warranty
+  .calculate-section-wrapper
+    border: none
+
+.schedule-wrapper
+  margin: 47px 0 0
+  width: 100%
+  background: $accent
+  color: #fff
+  padding: 30px 40px 20px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  h3
+    font-size: 33px
+    font-weight: bold
+    width: 100%
+
+.schedule-box
+  width: 71%
+  &:last-child
+    width: 27%
+
+.list-schedule
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+  color: #808080
+  font-size: 10px
+  text-align: center
+
+  li
+    width: 136px
+    margin: 18px 0 0
+    background: #feffff
+    height: 23px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.schedule-box-weekend
+  .list-schedule
+    color: #fff
+    li
+      background: rgba(#feffff, .5)
+
+
+//.contacts section
+.contacts
+  background: #f2f2f2
+  padding: 159px 0 67px
+  h2
+    &:before
+      background: #feffff
+
+
+.contacts-box
+  margin: 33px auto 0
+  max-width: 270px
+  width: 100%
+  color: #000000
+  font-size: 20px
+  a
+    color: #000000
+
+.contacts-box1
+  .contacts-box__icon
+    width: 38px
+
+.contacts-box3
+  .contacts-box__icon
+    width: 55px
+
+.contacts-box__icon
+  width: 51px
+  height: 54px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.contacts-box__body
+  margin: 15px 0 0
+  padding: 19px 0 0
+  border-top: 5px solid $accent
+
+
+//footer
+footer
+  background: $footer-bg
+  color: #fff
+  padding: 15px 0 27px
+
+  .logo
+    max-width: 107px
+  .container
+    padding: 0 87px 0 46px
+  .phone
+    color: #fff
+    border-color: #fff
+  .address
+    margin: 0 55px 0 auto
+
+.mobile-menu
+  display: none
+  position: fixed
+  right: 0
+  top: 0
+  width: 100%
+  height: 100%
+  max-width: 300px
+  padding: 30px
+  overflow-y: auto
+  background: #fff
+  z-index: 3
+  box-shadow: 0 12px 51px 0 rgba(0, 0, 0, 0.13)
+  border-left: 4px solid $accent
+  .logo
+    margin: 0 auto 20px
+  .address
+    flex-direction: column
+    align-items: flex-start
+    padding: 10px 0
+    margin: 20px 0
+    border:
+      top: 1px solid $accent
+      bottom: 1px solid $accent
+    strong
+      margin: 5px 0 0
+  .phone
+    text-align: center
+    margin: 0 0 20px
+
+.menu
+  font-weight: 600
+  li
+    margin: 0 0 10px
+    a
+      color: $footer-bg
+      &:hover
+        color: $accent
+
+
+.btn-close, .close
+  width: 30px
+  height: 30px
+  padding: 7px
+  background: $accent
+  margin: 0 0 20px auto
+  cursor: pointer
+
+.modal-content
+  border: none
+    radius: 0
+  padding: 40px 30px
+  form
+    label, button
+      max-width: none
+      margin: 0 0 20px
+  h3
+    text-transform: uppercase
+    text-align: center
+    width: 100%
+    font-weight: bold
+    font-size: 24px
+    margin: 0 auto 30px
+
+.close
+  position: absolute
+  right: 10px
+  top: 10px
+
+
+.modal-header
+  padding: 0
+  border: none
+  .close
+    margin: 0
+    background: $accent
+    opacity: 1
+    padding: 7px
+
+.modal-body
+  padding: 0
+
+@import "media"
+// Всегда в конце
