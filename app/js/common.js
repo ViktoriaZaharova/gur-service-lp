@@ -2,7 +2,21 @@ $('.reviews-slider').slick({
     slidesToShow: 3,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 $('.btn-burger').on('click', function () {
@@ -33,3 +47,4 @@ $(document).ready(function () {
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 new WOW().init();
+

@@ -3,7 +3,7 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width: 1200px)
   .contacts-box
     font-size: 16px
     max-width: 180px
@@ -26,54 +26,364 @@
   .phone
     padding: 6px 10px
 
+  .advantages-wrapper
+    padding: 0 40px
+
+  .price-box
+    max-width: 49%
+    font-size: 12px
+
+  .list-phones
+    font-size: 12px
+
+  .list-schedule li
+    width: 115px
+
+  .not-included
+    h2
+      font-size: 70px
+
+  .list-check
+    font-size: 14px
+    li
+      margin: 0 0 15px
+
+  .service-included h3
+    font-size: 70px
+
+  .reviews-slider
+    padding: 0 60px
+
+  .reviews-box
+    max-width: 98%
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	.list-phones
+@media only screen and (max-width: 992px)
+  .list-phones
     p
       display: none
 
+    .contacts
+      padding: 40px 0
+
+  h1
+    font-size: 100px
+
+    span
+      font-size: 70px
+
+  .main-img
+    max-width: 600px
+    right: 15px
+
+  .main-img-circle
+    width: 300px
+    height: 300px
+
+  .main-content
+    padding: 0
+
+  h2
+    font-size: 40px
+    span
+      &:before
+        height: 25px
+
+  .about
+    padding: 60px 0
+    h2
+      font-size: 70px
+
+  .advantages-wrapper
+    padding: 0
+
+  .btn-sing
+    height: 70px
+    font-size: 15px
+    max-width: 400px
+    margin: 60px auto -126px
+
+  .advantages-box__icon
+    width: 55px
+    min-width: 55px
+    height: 55px
+
+  .advantages-box
+    max-width: 200px
+
+  .price-content
+    width: calc(100% - 400px)
+
+  .price-content-info
+    max-width: 400px
+    .box-text
+      font-size: 16px
+
+  .price-content-info__img
+    max-width: 300px
+    right: -40px
+
+  .price-box__sum
+    font-size: 24px
+
+  footer .container
+    padding: 0 15px
+
+  .schedule-box
+    width: 100%
+    margin: 0 0 30px
+    &:first-child, &:last-child
+      width: 100%
+    &:last-child
+      margin: 0
+      .list-schedule li
+        width: 49%
+
+  .list-schedule li
+    width: 19%
+
+  .schedule-wrapper
+    padding: 20px
+    h3
+      font-size: 24px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 900px)
+  .price-content-info
+    max-width: none
+    padding: 30px
+    &:before
+      left: -15px
+    .box-text
+      max-width: 80%
+
+  .price-content
+    width: 100%
+    padding: 0
+
+  .price
+    padding: 70px 0 0
+
+@media only screen and (max-width: 768px)
+  .address
+    display: none
+
+  .list-phones
+    margin: 0 auto
+
+  .main-img
+    max-width: 400px
+    top: 0
+    position: relative
+    margin: 0 auto
+
+  main
+    padding: 30px 0 0
+
+  .main-img-circle
+    left: 0
+    width: 200px
+    height: 200px
+    bottom: -50px
+    span
+      width: calc(100% - 30px)
+      height: calc(100% - 30px)
+    &:before
+      width: calc(100% - 60px)
+      height: calc(100% - 60px)
+    &:after
+      width: calc(100% - 90px)
+      height: calc(100% - 90px)
+
+  .calculate-section-wrapper
+    padding: 30px
+
+  .form-calculate label
+    max-width: 49%
+
+  .form-calculate button
+    max-width: 100%
+
+  h2
+    font-size: 30px
+    span
+      &:before
+        height: 15px
+
+  .about
+    padding: 40px 0
+    h2
+      font-size: 50px
+
+  .about-title
+    margin: 0 0 30px
+
+  .advantages-box
+    margin: 0 0 30px
+    max-width: 32%
+
+  footer
+    .address
+      display: flex
+    .list-phones
+      justify-content: center
+      margin: 10px auto 0
+      width: 100%
+
+  .contacts-box
+    max-width: 49%
+
   .contacts
+    padding: 70px 0
+
+  .article-box__name, .regions-box
+    font-size: 16px
+
+  .articles
+    padding: 60px 0
+
+  .not-included
+    h2
+      font-size: 50px
+
+  .list-check
+    &:before
+      display: none
+
+  .service-included h3
+    font-size: 50px
+
+  .service-included-img
+    margin: 0 auto
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .list-phones
+    display: none
+
+  .btn-burger
+    margin: 0 0 0 auto
+    padding: 10px 8px
+    height: 40px
+    width: 45px
+
+  h1
+    font-size: 70px
+    span
+      font-size: 40px
+
+  .advantages-box
+    max-width: 49%
+
+  .advantages-content
+    padding: 0 0 10px 20px
+
+  footer
+    padding: 20px 0
+    .list-phones
+      display: flex
+      a
+        margin: 0 auto
+
+  .list-schedule li
+    width: 49%
+
+  .schedule-wrapper
+    margin: 30px 0 0
+
+  .p-80, .regions
+    padding: 60px 0
+
+  .article-box__body
+    padding: 15px
+
+  .articles
+    padding: 50px 0 0
+
+  .regions
+    .btn-sing
+      margin: 30px auto 0
+
+  .gallery
+    padding: 60px 0 30px
+
+  .not-included
+    h2
+      font-size: 30px
+
+  .service-included
+    padding: 40px 0
+    h3
+      font-size: 30px
+
+  .reviews
+    padding: 60px 0 30px
+
+  .links-all
+    position: relative
+    width: 100%
+    transform: none
+    margin: 10px auto 0
+    text-align: center
+    right: 0
+
+  .slick-prev
+    left: 0
+
+  .slick-next
+    right: 0
+
+  .slick-dots li
+    width: 30px
+
+@media only screen and (max-width: 480px)
+  h1
+    font-size: 50px
+    span
+      font-size: 30px
+
+  h2
+    font-size: 24px
+
+  .contacts-box__icon
+    width: 30px
+    height: 40px
+
+  .contacts-box3 .contacts-box__icon
+    width: 40px
+
+  .price-content-info__img
+    max-width: 200px
+
+  .btn-white
+    height: 40px
+
+  .price-content-info
+    padding: 20px 0
+    .box-text
+      max-width: 60%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .form-calculate label
+    max-width: 100%
+
+  .advantages-box
+    max-width: none
+
+  .advantages
     padding: 40px 0
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+  .btn-sing
+    margin: 20px auto 0
+    height: 50px
+    font-size: 14px
 
+  .contacts-box
+    max-width: none
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+  .gallery-item
+    height: 200px
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .not-included
+    padding: 60px 0 20px
