@@ -46,5 +46,9 @@ $(document).ready(function () {
 
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+$('.twentytwenty-container').twentytwenty();
+
 new WOW().init();
+
+
 
